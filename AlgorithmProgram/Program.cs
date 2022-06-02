@@ -8,13 +8,26 @@ namespace AlgorithmProgram
 {
     public class Program 
     {
-        public static void Main(string [] args) 
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Enter a prime Number :");
+            Console.WriteLine("0.Enter a prime Number :");
+            Console.WriteLine("1.Program for anagram :");
+            Console.WriteLine("Enter a choice");
+            int choice = Convert.ToInt32(Console.ReadLine());
+            switch (choice)
+            {
+                case 0:
+                    PrimeNumber.APrime();
+                    break;
+                case 1:
+                    anagram.AnagarmNumber();
+                    break;
+           
+                    
 
-            PrimeNumber.APrime();
-            
-            
+            }
+
+
         }
 
     }
