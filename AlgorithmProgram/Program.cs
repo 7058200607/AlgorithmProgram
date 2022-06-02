@@ -17,6 +17,7 @@ namespace AlgorithmProgram
             Console.WriteLine("4.Insertion sort ");
             Console.WriteLine("5.BubbleSort :");
             Console.WriteLine("6.merge Sort :");
+            Console.WriteLine("7.Binary Search tree");
             Console.WriteLine("Enter a choice");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -67,12 +68,9 @@ namespace AlgorithmProgram
                         mergeSort.printArray(arr2);
                     }
                     break;
-
-
-                        
-           
-               
-
+                case 7:
+                    BinarySearchTree.Abinarysearchtree();
+                    break;
             }
 
 
