@@ -13,6 +13,7 @@ namespace AlgorithmProgram
             Console.WriteLine("0.Enter a prime Number :");
             Console.WriteLine("1.Program for anagram :");
             Console.WriteLine("2.Extend Program that anagram and palindrome");
+            Console.WriteLine("3.permutations of a String using iterative method and Recursion method.");
             Console.WriteLine("Enter a choice");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -26,9 +27,20 @@ namespace AlgorithmProgram
                 case 2:
                     ExtendNumber.displayPrimePalindrome();
                     break;
+                case 3:
+                    String s;
+                    String answer = "";
+
+                    Console.Write("Enter the string : ");
+                    s = Console.ReadLine();
+
+                    Console.Write("\nAll possible strings are : ");
+                    
+                        permutationsOfString.permute(s, answer);
+                    break;
                         
            
-                    
+               
 
             }
 
