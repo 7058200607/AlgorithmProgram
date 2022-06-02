@@ -12,6 +12,7 @@ namespace AlgorithmProgram
         {
             Console.WriteLine("0.Enter a prime Number :");
             Console.WriteLine("1.Program for anagram :");
+            Console.WriteLine("2.Extend Program that anagram and palindrome");
             Console.WriteLine("Enter a choice");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -22,6 +23,10 @@ namespace AlgorithmProgram
                 case 1:
                     anagram.AnagarmNumber();
                     break;
+                case 2:
+                    ExtendNumber.displayPrimePalindrome();
+                    break;
+                        
            
                     
 
