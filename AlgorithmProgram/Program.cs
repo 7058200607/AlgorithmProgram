@@ -14,6 +14,7 @@ namespace AlgorithmProgram
             Console.WriteLine("1.Program for anagram :");
             Console.WriteLine("2.Extend Program that anagram and palindrome");
             Console.WriteLine("3.permutations of a String using iterative method and Recursion method.");
+            Console.WriteLine("4.Insertion sort ");
             Console.WriteLine("Enter a choice");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -37,6 +38,12 @@ namespace AlgorithmProgram
                     Console.Write("\nAll possible strings are : ");
                     
                         permutationsOfString.permute(s, answer);
+                    break;
+                case 4:
+                    int[] arr = { 12, 11, 13, 5, 6 };
+                    InsertionSort ob = new InsertionSort();
+                    ob.sort(arr);
+                    InsertionSort.printArray(arr);
                     break;
                         
            
