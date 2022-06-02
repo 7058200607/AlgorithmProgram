@@ -16,6 +16,7 @@ namespace AlgorithmProgram
             Console.WriteLine("3.permutations of a String using iterative method and Recursion method.");
             Console.WriteLine("4.Insertion sort ");
             Console.WriteLine("5.BubbleSort :");
+            Console.WriteLine("6.merge Sort :");
             Console.WriteLine("Enter a choice");
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -54,6 +55,17 @@ namespace AlgorithmProgram
                         Console.WriteLine("Sorted array");
                         bubbleSort.printArray(arr1, n); 
                     
+                    break;
+                case 6:
+                    {
+                        int[] arr2 = { 12, 11, 13, 5, 6, 7 };
+                        Console.WriteLine("Given Array");
+                        mergeSort.printArray(arr2);
+                        mergeSort obj = new mergeSort();
+                        obj.sort(arr2, 0, arr2.Length - 1);
+                        Console.WriteLine("\nSorted array");
+                        mergeSort.printArray(arr2);
+                    }
                     break;
 
 
